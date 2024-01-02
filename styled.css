@@ -1,0 +1,231 @@
+@font-face {
+  font-family: NexaBlack;
+  src: url("./fonts/NexaBlack.otf");
+}
+@font-face {
+  font-family: NexaBold;
+  src: url("./fonts/NexaBold.otf");
+}
+@font-face {
+  font-family: NexaLight;
+  src: url("./fonts/NexaLight.otf");
+}
+@font-face {
+  font-family: Nexa;
+  src: url("./fonts/NexaRegular.otf");
+}
+
+body {
+  background-color: #0e1016;
+  font-family: Nexa;
+  color: #fff;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.innerWrapper {
+  display: flex;
+  justify-content: center;
+}
+.imageDesign {
+  max-width: 342px;
+  width: 100%;
+}
+.description {
+  color: #fff;
+  font-size: 16px;
+}
+
+.rightDivContainer {
+}
+
+.button {
+  background-color: #0d4df2;
+  border: 1.5px solid #0d4df2;
+  height: 16px;
+  font-size: 14px;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 8px;
+  width: 20%;
+  margin: 1px;
+  width: 20%;
+}
+
+.h3Custom {
+  font-family: NexaBold;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: normal;
+  color: #c6cddd;
+  margin: 0 0 30px;
+}
+
+.h3CustomMobile {
+  visibility: hidden;
+}
+
+/* -------CSSFOR DIFFERENT SECTION-------- */
+.inerWrapperRoadMap {
+  display: flex;
+  justify-content: center;
+}
+
+.roadMApContainer {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.roadMapTitle {
+  margin: 64px;
+  color: #c6cdd9;
+  text-align: center;
+  font: sans-serif;
+  font-size: 48px;
+}
+.roadMApWrapper {
+  margin-top: 40px;
+}
+.swiperWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 52px;
+}
+
+.swiperWrapperText {
+  max-width: 172px;
+  width: 100%;
+  font-size: 18px;
+}
+.timeStampText {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-direction: column;
+  color: #fff;
+}
+.statusWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  position: relative;
+}
+.statusWrapper::before {
+  content: "";
+  position: absolute;
+  width: 184px;
+  height: 23px;
+  background-color: blue;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 25px 25px 25px 25px;
+}
+.status {
+  width: 100%;
+  background: #191c29;
+  border-radius: 14px;
+  margin: 5px;
+  padding: 20px;
+  font-family: var(--Nexa-Light);
+  text-align: left;
+  position: relative;
+  top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: white;
+}
+.status::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: white;
+  border-radius: 25px;
+  top: -35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+.description {
+}
+
+.backgroundImagefeature {
+  position: absolute;
+  background-size: contain;
+  max-width: 84px;
+  width: 13px;
+  height: 398px;
+  left: 3px;
+  top: 450px;
+  z-index: -1;
+}
+
+.secondimg {
+  width: 319px;
+}
+
+.date {
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .h3Custom {
+    visibility: hidden;
+    font-size: 0;
+    font-weight: 0;
+    line-height: 0;
+    color: transparent;
+    margin: 0;
+    padding: 0;
+    height: 0;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 13px;
+    width: max-content;
+  }
+  .description {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 0 15px;
+  }
+
+  .leftDiv {
+    margin: 0 20px 0 0;
+    max-width: 130px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .h3CustomMobile {
+    visibility: visible;
+    font-family: NexaBold;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: normal;
+    color: #c6cddd;
+    margin: 0 0 30px;
+  }
+}
+
+.leftDiv {
+  width: 50%;
+  text-align: left;
+}
+
+.rightDiv {
+  width: 50%;
+  text-align: left;
+}
