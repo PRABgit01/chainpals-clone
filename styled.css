@@ -39,9 +39,6 @@ body {
   font-size: 16px;
 }
 
-.rightDivContainer {
-}
-
 .button {
   background-color: #0d4df2;
   border: 1.5px solid #0d4df2;
@@ -90,17 +87,19 @@ body {
 }
 .roadMApWrapper {
   margin-top: 40px;
+  
 }
 .swiperWrapper {
   display: flex;
   justify-content: center;
-  margin: 52px;
+  margin: 62px;
 }
 
 .swiperWrapperText {
   max-width: 172px;
   width: 100%;
   font-size: 18px;
+  
 }
 .timeStampText {
   display: flex;
@@ -134,7 +133,7 @@ body {
   border-radius: 14px;
   margin: 5px;
   padding: 20px;
-  font-family: var(--Nexa-Light);
+  font-family: NexaLight;
   text-align: left;
   position: relative;
   top: 15px;
@@ -149,7 +148,7 @@ body {
   position: absolute;
   width: 16px;
   height: 16px;
-  background-color: white;
+  background-color: #fff;
   border-radius: 25px;
   top: -35px;
   left: 0;
@@ -160,14 +159,14 @@ body {
 }
 
 .backgroundImagefeature {
-  position: absolute;
-  background-size: contain;
-  max-width: 84px;
-  width: 13px;
-  height: 398px;
-  left: 3px;
-  top: 450px;
-  z-index: -1;
+ position: absolute;
+    background-size: contain;
+    max-width: 390px;
+    width: 100%;
+    height: 390px;
+    left: 0;
+    top: 473px;
+    z-index: -1;
 }
 
 .secondimg {
@@ -176,8 +175,11 @@ body {
 
 .date {
   text-align: center;
-}
 
+}
+.dateMobile{
+    display: none;
+}
 @media (max-width: 991px) {
   .h3Custom {
     visibility: hidden;
@@ -196,9 +198,11 @@ body {
     width: max-content;
   }
   .description {
+    color: #bdc2cb;
     font-size: 12px;
     line-height: 20px;
     margin: 0 0 15px;
+    font-family:NexaLight ;
   }
 
   .leftDiv {
@@ -218,6 +222,79 @@ body {
     color: #c6cddd;
     margin: 0 0 30px;
   }
+
+  /* --second section ----- */
+  .swiperWrapper{
+    overflow-x: scroll;
+    justify-content: flex-start;
+    margin: 0px;
+
+  }
+
+  .swiperWrapperText{
+    min-width: 187px;
+  }
+
+  .date{
+    display: none;
+  }
+  .statusWrapper::before{
+    height: 8px;
+    top: 0;
+    width: 194px;
+  }
+
+  .status::before{
+    left: 36px;
+    margin: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+    top: -15px;
+  }
+
+  .dateMobile{
+    display: block;
+    max-width: 90px;
+    width: 100%;
+    background-color: #20e6f2;
+    padding: 8px 10px 6px;
+    margin: 0 0 15px;
+    box-shadow: inset 0 2px 2px #0000008a;
+    border-radius: 30px;
+    text-align: center;
+    font-family: var(--Nexa-Bold);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: normal;
+    color: #0e1016;
+}
+.status{
+    top: 0px;
+}
+.statusWrapper{
+    padding: 10px 5px;
+}
+
+.roadMapTitle{
+    font-size: 20px;
+    margin: 45px;
+}
+
+.backgroundImagefeature{
+    max-width: 190px;
+    left: auto;
+    right: 0;
+    top: 249px;
+    transform: scaleX(-1);
+}
+.secondimg{
+    width: 180px;
+}
+
 }
 
 .leftDiv {
