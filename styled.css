@@ -38,7 +38,6 @@ body {
 .description {
   color: #fff;
   font-size: 16px;
-  line-height: 4px;
   line-height: 27px;
 }
 
@@ -74,7 +73,7 @@ body {
   display: flex;
 }
 
-.roadMApContainer {
+.roadMapContainer {
   max-width: 1170px;
   width: 100%;
   margin: 0 auto;
@@ -85,7 +84,7 @@ body {
   color: #c6cdd9;
   text-align: center;
   font-size: 48px;
-  line-height: 1px;
+  line-height: 12px;
 
 }
 .roadMapWrapper {
