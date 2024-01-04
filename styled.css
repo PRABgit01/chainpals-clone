@@ -34,10 +34,12 @@ body {
   max-width: 342px;
   width: 100%;
 }
+
 .description {
   color: #fff;
   font-size: 16px;
   line-height: 4px;
+  line-height: 27px;
 }
 
 .button {
@@ -62,7 +64,7 @@ body {
   margin: 0 0 30px;
 }
 
-.TitleMobile {
+.titleMobile {
   visibility: hidden;
 }
 
@@ -70,7 +72,6 @@ body {
 
 .inerWrapperRoadMap {
   display: flex;
-  justify-content: center;
 }
 
 .roadMApContainer {
@@ -83,11 +84,13 @@ body {
   margin: 64px;
   color: #c6cdd9;
   text-align: center;
-  font: sans-serif;
   font-size: 48px;
+  line-height: 1px;
+
 }
 .roadMapWrapper {
   margin-top: 40px;
+  line-height: 1px;
 }
 .swiperWrapper {
   display: flex;
@@ -100,13 +103,15 @@ body {
   width: 100%;
   font-size: 18px;
 }
+
 .timeStampText {
   display: flex;
   width: 100%;
   margin-bottom: 20px;
   flex-direction: column;
-  color: #fff;
+  color:#fff;
 }
+
 .statusWrapper {
   display: flex;
   align-items: center;
@@ -114,6 +119,7 @@ body {
   padding: 10px 5px;
   position: relative;
 }
+
 .statusWrapper::before {
   content: "";
   position: absolute;
@@ -126,6 +132,7 @@ body {
   margin: 0 auto;
   border-radius: 25px 25px 25px 25px;
 }
+
 .status {
   width: 100%;
   background: #191c29;
@@ -142,6 +149,7 @@ body {
   letter-spacing: normal;
   color: white;
 }
+
 .status::before {
   content: "";
   position: absolute;
@@ -155,8 +163,7 @@ body {
   margin: 0 auto;
 }
 
-
-.backgroundImagefeature {
+.backgroundFeatureImage {
   position: absolute;
   background-size: contain;
   max-width: 390px;
@@ -171,18 +178,19 @@ body {
   width: 319px;
 }
 
+.linkText{
+  color: #fff;
+}
 .roadmapDate {
   text-align: center;
 }
-.roadmaproadmapDateMobile {
+.roadmapDateMobile {
   display: none;
 }
 
 @media (max-width: 991px) {
   .heading {
-    visibility: hidden;
-    color: transparent;
-
+    display: none;
   }
 
   .button {
@@ -205,7 +213,7 @@ body {
     text-align: left;
   }
 
-  .TitleMobile {
+  .titleMobile {
     visibility: visible;
     font-family: NexaBold;
     font-size: 28px;
@@ -247,14 +255,14 @@ body {
     top: -15px;
   }
 
-  .roadmaproadmapDateMobile {
+  .roadmapDateMobile {
     display: block;
     max-width: 90px;
     width: 100%;
     background-color: #20e6f2;
     padding: 8px 10px 6px;
     margin: 0 0 15px;
-    box-shadow: inset 0 2px 2px #0000008a;
+    box-shadow: inset 0 2px 2px;
     border-radius: 30px;
     text-align: center;
     font-family: var(--Nexa-Bold);
@@ -276,7 +284,7 @@ body {
     margin: 45px;
   }
 
-  .backgroundImagefeature {
+  .backgroundFeatureImage {
     max-width: 190px;
     left: auto;
     right: 0;
