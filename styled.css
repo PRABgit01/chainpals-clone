@@ -1,0 +1,306 @@
+@font-face {
+  font-family: NexaBlack;
+  src: url("./fonts/NexaBlack.otf");
+}
+@font-face {
+  font-family: NexaBold;
+  src: url("./fonts/NexaBold.otf");
+}
+@font-face {
+  font-family: NexaLight;
+  src: url("./fonts/NexaLight.otf");
+}
+@font-face {
+  font-family: Nexa;
+  src: url("./fonts/NexaRegular.otf");
+}
+
+body {
+  background-color: #0e1016;
+  font-family: Nexa;
+  color: #fff;
+}
+.container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.innerWrapper {
+  display: flex;
+  justify-content: center;
+}
+.imageDesign {
+  max-width: 342px;
+  width: 100%;
+}
+
+.description {
+  color: #fff;
+  font-size: 16px;
+  line-height: 27px;
+}
+
+.button {
+  background-color: #0d4df2;
+  border: 2px solid #0d4df2;
+  height: 16px;
+  font-size: 14px;
+  padding: 15px 30px;
+  color: #fff;
+  border-radius: 8px;
+  width: 20%;
+  margin: 1px;
+}
+
+.heading {
+  font-family: NexaBold;
+  font-size: 44px;
+  font-weight: 700;
+  line-height: 66px;
+  letter-spacing: normal;
+  color: #c6cddd;
+  margin: 0 0 30px;
+}
+
+.titleMobile {
+  visibility: hidden;
+}
+
+/* -------CSS FOR DIFFERENT SECTION-------- */
+
+.inerWrapperRoadMap {
+  display: flex;
+}
+
+.roadMapContainer {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.roadMapTitle {
+  margin: 64px;
+  color: #c6cdd9;
+  text-align: center;
+  font-size: 48px;
+  line-height: 12px;
+
+}
+.roadMapWrapper {
+  margin-top: 40px;
+  line-height: 1px;
+}
+.swiperWrapper {
+  display: flex;
+  justify-content: center;
+  margin: 62px;
+}
+
+.swiperWrapperText {
+  max-width: 172px;
+  width: 100%;
+  font-size: 18px;
+}
+
+.timeStampText {
+  display: flex;
+  width: 100%;
+  margin-bottom: 20px;
+  flex-direction: column;
+  color:#fff;
+}
+
+.statusWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  position: relative;
+}
+
+.statusWrapper::before {
+  content: "";
+  position: absolute;
+  width: 184px;
+  height: 23px;
+  background-color: blue;
+  top: -8px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  border-radius: 25px 25px 25px 25px;
+}
+
+.status {
+  width: 100%;
+  background: #191c29;
+  border-radius: 14px;
+  margin: 5px;
+  padding: 20px;
+  font-family: NexaLight;
+  text-align: left;
+  position: relative;
+  top: 15px;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 30px;
+  letter-spacing: normal;
+  color: white;
+}
+
+.status::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  background-color: #fff;
+  border-radius: 25px;
+  top: -35px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.backgroundFeatureImage {
+  position: absolute;
+  background-size: contain;
+  max-width: 390px;
+  width: 100%;
+  height: 390px;
+  left: 0;
+  top: 473px;
+  z-index: -1;
+}
+
+.shieldImage {
+  width: 319px;
+}
+
+.linkText{
+  color: #fff;
+}
+.roadmapDate {
+  text-align: center;
+}
+.roadmapDateMobile {
+  display: none;
+}
+
+@media (max-width: 991px) {
+  .heading {
+    display: none;
+  }
+
+  .button {
+    padding: 8px 16px;
+    font-size: 13px;
+    width: max-content;
+  }
+  .description {
+    color: #bdc2cb;
+    font-size: 12px;
+    line-height: 20px;
+    margin: 0 0 15px;
+    font-family: NexaLight;
+  }
+
+  .leftDiv {
+    margin: 0 20px 0 0;
+    max-width: 130px;
+    width: 50%;
+    text-align: left;
+  }
+
+  .titleMobile {
+    visibility: visible;
+    font-family: NexaBold;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 33px;
+    letter-spacing: normal;
+    color: #c6cddd;
+    margin: 0 0 30px;
+  }
+
+  /* --second section ----- */
+  .swiperWrapper {
+    overflow-x: scroll;
+    justify-content: flex-start;
+    margin: 0px;
+  }
+
+  .swiperWrapperText {
+    min-width: 187px;
+  }
+
+  .roadmapDate {
+    display: none;
+  }
+  .statusWrapper::before {
+    height: 8px;
+    top: 0;
+    width: 194px;
+  }
+
+  .status::before {
+    left: 36px;
+    margin: 0;
+    width: 8px;
+    height: 8px;
+    background-color: #fff;
+    border-radius: 25px;
+    border: none;
+    top: -15px;
+  }
+
+  .roadmapDateMobile {
+    display: block;
+    max-width: 90px;
+    width: 100%;
+    background-color: #20e6f2;
+    padding: 8px 10px 6px;
+    margin: 0 0 15px;
+    box-shadow: inset 0 2px 2px;
+    border-radius: 30px;
+    text-align: center;
+    font-family: var(--Nexa-Bold);
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 14px;
+    letter-spacing: normal;
+    color: #0e1016;
+  }
+  .status {
+    top: 0px;
+  }
+  .statusWrapper {
+    padding: 10px 5px;
+  }
+
+  .roadMapTitle {
+    font-size: 20px;
+    margin: 45px;
+  }
+
+  .backgroundFeatureImage {
+    max-width: 190px;
+    left: auto;
+    right: 0;
+    top: 249px;
+    transform: scaleX(-1);
+  }
+  .shieldImage {
+    width: 180px;
+  }
+}
+
+.leftDiv {
+  width: 50%;
+  text-align: left;
+}
+
+.rightDiv {
+  width: 50%;
+  text-align: left;
+}

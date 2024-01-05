@@ -1,5 +1,5 @@
 ### chainpals.io Clone
-### real site ``` https://www.chainpals.io/ ```
+### real site : https://www.chainpals.io/ 
 
 **Created two section**
 
